@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE01F07B1F440FAE009DB3F7 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE01F07A1F440FAE009DB3F7 /* Chapter.swift */; };
 		DE8145441F43D7D100D9F121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8145431F43D7D100D9F121 /* AppDelegate.swift */; };
 		DE8145461F43D7D100D9F121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8145451F43D7D100D9F121 /* ViewController.swift */; };
 		DE8145491F43D7D100D9F121 /* Searchable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE8145471F43D7D100D9F121 /* Searchable.xcdatamodeld */; };
 		DE81454B1F43D7D100D9F121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE81454A1F43D7D100D9F121 /* Assets.xcassets */; };
 		DE81454E1F43D7D100D9F121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE81454C1F43D7D100D9F121 /* Main.storyboard */; };
+		DE8145561F43D7E200D9F121 /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8145551F43D7E200D9F121 /* Searchable.swift */; };
+		DE8145581F43E97D00D9F121 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8145571F43E97D00D9F121 /* Book.swift */; };
+		DEA5CDDF1F4420C9007AAFEB /* CollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA5CDDE1F4420C9007AAFEB /* CollectionView.framework */; };
+		DEA5CDE01F4420C9007AAFEB /* CollectionView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEA5CDDE1F4420C9007AAFEB /* CollectionView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEA5CDE31F442160007AAFEB /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5CDE21F442160007AAFEB /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DEA5CDE11F4420C9007AAFEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DEA5CDE01F4420C9007AAFEB /* CollectionView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DE01F07A1F440FAE009DB3F7 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 		DE8145401F43D7D100D9F121 /* Searchable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Searchable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8145431F43D7D100D9F121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE8145451F43D7D100D9F121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +43,10 @@
 		DE81454A1F43D7D100D9F121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE81454D1F43D7D100D9F121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE81454F1F43D7D100D9F121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE8145551F43D7E200D9F121 /* Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
+		DE8145571F43E97D00D9F121 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DEA5CDDE1F4420C9007AAFEB /* CollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA5CDE21F442160007AAFEB /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA5CDDF1F4420C9007AAFEB /* CollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +64,7 @@
 		DE8145371F43D7D100D9F121 = {
 			isa = PBXGroup;
 			children = (
+				DEA5CDDE1F4420C9007AAFEB /* CollectionView.framework */,
 				DE8145421F43D7D100D9F121 /* Searchable */,
 				DE8145411F43D7D100D9F121 /* Products */,
 			);
@@ -56,6 +83,10 @@
 			children = (
 				DE8145431F43D7D100D9F121 /* AppDelegate.swift */,
 				DE8145451F43D7D100D9F121 /* ViewController.swift */,
+				DE8145551F43D7E200D9F121 /* Searchable.swift */,
+				DE8145571F43E97D00D9F121 /* Book.swift */,
+				DE01F07A1F440FAE009DB3F7 /* Chapter.swift */,
+				DEA5CDE21F442160007AAFEB /* ListCell.swift */,
 				DE81454A1F43D7D100D9F121 /* Assets.xcassets */,
 				DE81454C1F43D7D100D9F121 /* Main.storyboard */,
 				DE81454F1F43D7D100D9F121 /* Info.plist */,
@@ -74,6 +105,7 @@
 				DE81453C1F43D7D100D9F121 /* Sources */,
 				DE81453D1F43D7D100D9F121 /* Frameworks */,
 				DE81453E1F43D7D100D9F121 /* Resources */,
+				DEA5CDE11F4420C9007AAFEB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8145581F43E97D00D9F121 /* Book.swift in Sources */,
 				DE8145461F43D7D100D9F121 /* ViewController.swift in Sources */,
+				DE8145561F43D7E200D9F121 /* Searchable.swift in Sources */,
+				DEA5CDE31F442160007AAFEB /* ListCell.swift in Sources */,
+				DE01F07B1F440FAE009DB3F7 /* Chapter.swift in Sources */,
 				DE8145441F43D7D100D9F121 /* AppDelegate.swift in Sources */,
 				DE8145491F43D7D100D9F121 /* Searchable.xcdatamodeld in Sources */,
 			);
@@ -292,6 +328,7 @@
 				DE8145541F43D7D100D9F121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

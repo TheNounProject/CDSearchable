@@ -11,7 +11,10 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    
+    static var current : AppDelegate {
+        return NSApp.delegate as! AppDelegate
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -30,7 +33,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
+        
+        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        
+        
         let container = NSPersistentContainer(name: "Searchable")
+        container.persistentStoreDescriptions = [
+            NSPersistentStoreDescription(url: docs.appendingPathComponent("SearchTest.sqlite"))
+        ]
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error {
                 // Replace this implementation with code to handle the error appropriately.
