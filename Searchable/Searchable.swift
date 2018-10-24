@@ -3,7 +3,7 @@
 //  Searchable
 //
 //  Created by Wesley Byrne on 8/15/17.
-//  Copyright © 2017 nounproject. All rights reserved.
+//  Copyright © 2017 WCBMedia. All rights reserved.
 //
 
 import Foundation
